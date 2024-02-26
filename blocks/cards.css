@@ -1,0 +1,59 @@
+.cards {
+  display: grid;
+  justify-content: center;
+  margin: 42.5px auto 0;
+  grid-template-columns: repeat(auto-fill, 282px);
+  gap: 17px;
+  grid-auto-flow: dense;
+  /* padding: 0 19px 0; */
+  padding: 0 84px 0;
+  max-width: 880px;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  width: 282px;
+  height: 361px;
+  justify-self: center;
+}
+
+.card__image {
+  width: 282px;
+  height: 282px;
+}
+
+.card__information {
+  display: flex;
+  margin: 0 20px 0;
+  justify-content: space-between;
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-wrap: nowrap;
+}
+
+.card__button {
+  background-image: url(../images/Heart\ SVG.svg);
+  width: 21px;
+  min-width: 21px;
+  height: 18px;
+  align-self: center;
+  border: 0px;
+  /* margin: 0 10px 0 0; */
+  background-color: white;
+  padding: 0;
+}
+
+.card__button:hover {
+  opacity: 0.5;
+}
