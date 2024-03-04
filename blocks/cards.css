@@ -14,7 +14,7 @@
   background-color: white;
   color: black;
   border-radius: 10px;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -34,7 +34,16 @@
   margin: 0 20px 0;
   justify-content: space-between;
   color: #000;
-  font-family: Inter;
+  /* font-family: "Inter";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-wrap: nowrap; */
+}
+
+.card__location {
+  font-family: "Inter";
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
