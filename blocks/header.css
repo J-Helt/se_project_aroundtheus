@@ -1,28 +1,19 @@
-@media screen and (min-width: 560px) {
-  .header {
-    width: 100%;
-    max-width: 880px;
-    height: 74px;
-    border-bottom: 1px solid #545454;
-    margin: 45px auto 0px;
-    padding: 0;
-  }
+.header {
+  border-bottom: 1px solid rgb(84, 84, 84, 1);
+  margin: 45px auto 0px;
+  width: 100%;
+  max-width: 880px;
+  padding: 0;
+}
+
+.header__title {
+  margin: 0 0 41px;
 }
 
 @media screen and (max-width: 560px) {
   .header {
     width: 90%;
-    height: 74px;
-    border-bottom: 1px solid #545454;
-    margin: 45px auto 0px;
     padding: 0 0 0 40px;
+    margin: 45px auto 0;
   }
-}
-
-.page {
-  color: white;
-}
-
-.content {
-  margin: 40px auto;
 }

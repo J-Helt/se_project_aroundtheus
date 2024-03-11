@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: black">
+<html class="site" lang="en">
   <head>
     <link rel="stylesheet" href="pages/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>se_project_aroundtheus</title>
   </head>
 
   <body>
@@ -11,62 +13,63 @@
         <img class="header__title" src="./images/Vector.svg" />
       </header>
       <main class="content">
-        <div class="profile">
+        <section class="profile">
           <img class="profile__avatar" src="./images/Avatar.png" />
-          <section class="profile__info">
-            <h2 class="profile__info-name">
-              Jacques Cousteau<button class="profile__button-edit"></button>
-            </h2>
-            <h3 class="profile__info-description">Explorer</h3>
-          </section>
+          <div class="profile__info">
+            <div class="profile__info-topline">
+              <h1 class="profile__info-name">Jacques Cousteau</h1>
+              <button class="profile__button-edit"></button>
+            </div>
+            <p class="profile__info-description">Explorer</p>
+          </div>
 
           <button class="profile__button-add"></button>
-        </div>
+        </section>
         <section class="cards">
-          <div class="card">
+          <article class="card">
             <img class="card__image" src="./images/yosemite-valley.png" />
             <div class="card__information">
-              <p class="card__location">Yosemite Valley</p>
+              <h2 class="card__location">Yosemite Valley</h2>
               <button class="card__button"></button>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <img class="card__image" src="./images/lake-louise.png" />
             <div class="card__information">
-              <p class="card__location">Lake Louise</p>
+              <h2 class="card__location">Lake Louise</h2>
               <button class="card__button"></button>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <img class="card__image" src="./images/bald-mountains.png" />
             <div class="card__information">
-              <p class="card__location">Bald Mountains</p>
+              <h2 class="card__location">Bald Mountains</h2>
               <button class="card__button"></button>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <img class="card__image" src="./images/latemar.png" />
             <div class="card__information">
-              <p class="card__location">Latemar</p>
+              <h2 class="card__location">Latemar</h2>
               <button class="card__button"></button>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <img class="card__image" src="./images/vanoise-national-park.png" />
             <div class="card__information">
-              <p class="card__location">Vanoise Nationa...</p>
+              <h2 class="card__location">Vanoise Nationa...</h2>
               <button class="card__button"></button>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <img class="card__image" src="./images/lago-di-braies.png" />
             <div class="card__information">
-              <p class="card__location">Lago di Braies</p>
+              <h2 class="card__location">Lago di Braies</h2>
               <button class="card__button"></button>
             </div>
-          </div>
+          </article>
         </section>
-        <h4 class="copyright"><span>&copy </span>2022 Around The U.S.</h4>
+        <p class="copyright">&copy 2022 Around The U.S.</p>
       </main>
     </div>
   </body>
