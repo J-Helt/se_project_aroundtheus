@@ -3,7 +3,6 @@
   justify-content: flex-start;
   flex-direction: row;
   max-width: 880px;
-  max-height: 120px;
   margin: 0 auto;
 }
 
@@ -18,19 +17,17 @@
 
 .profile__info-name {
   font-size: 42px;
-  font-family: "Inter";
+  font-family: "Inter", "serif";
   font-weight: 500;
   line-height: 48px;
   margin: 22px 0 0;
   font-style: normal;
-  float: left;
-  /* text-wrap: nowrap; */
 }
 
 .profile__info-description {
   margin: 7px 0 21px;
   font-size: 18px;
-  font-family: Inter;
+  font-family: "Inter", "serif";
   font-weight: 400;
 }
 
@@ -53,6 +50,7 @@
   border-width: 0;
   border-color: white;
   background-color: transparent;
+  justify-self: flex-start;
 }
 
 .profile__button-edit:hover {
@@ -69,31 +67,29 @@
   border-radius: 50%;
 }
 
+.profile__info-topline {
+  display: flex;
+  flex-direction: row;
+}
+
 @media screen and (max-width: 560px) {
   .profile {
-    display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 880px;
     margin: 0 auto 30px;
-    max-height: 286px;
     align-items: center;
+    width: 90%;
   }
 
   .profile__info {
     margin: 30px 0 36px;
-    max-width: 100vw;
+    max-width: 90vw;
     align-items: center;
-    max-height: 50px;
   }
 
   .profile__info-name {
     font-size: 22px;
-    font-family: "Inter";
-    font-weight: 500;
-    max-height: 22px;
     margin: 0;
-    font-style: normal;
     text-align: center;
     line-height: 26.63px;
   }
@@ -101,22 +97,15 @@
   .profile__info-description {
     margin: 14px 0 0;
     font-size: 14px;
-    font-family: Inter;
-    font-weight: 400;
     text-align: center;
     line-height: 16.94px;
-    max-height: 14px;
   }
 
   .profile__button-add {
-    align-self: center;
     width: 282px;
     height: 50px;
     background-image: url(../images/Add\ Button\ 2.svg);
-    border: 2px;
-    background-repeat: no-repeat;
     margin: 0;
-    background-color: transparent;
     background-size: 100% 100%;
     padding: 0;
   }
@@ -126,9 +115,5 @@
     height: 18px;
     margin: 4px 0 0 10px;
     background-size: cover;
-  }
-
-  .profile__info-topline {
-    max-height: 22px;
   }
 }
