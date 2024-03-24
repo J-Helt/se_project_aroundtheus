@@ -22,6 +22,7 @@
   line-height: 48px;
   margin: 22px 0 0;
   font-style: normal;
+  text-overflow: none;
 }
 
 .profile__info-description {
@@ -29,6 +30,7 @@
   font-size: 18px;
   font-family: "Inter", "serif";
   font-weight: 400;
+  text-overflow: none;
 }
 
 .profile__button-add {
@@ -40,6 +42,7 @@
   background-image: url(../images/Add\ Button.svg);
   border-width: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .profile__button-edit {
@@ -51,6 +54,7 @@
   border-color: white;
   background-color: transparent;
   justify-self: flex-start;
+  cursor: pointer;
 }
 
 .profile__button-edit:hover {
@@ -70,6 +74,7 @@
 .profile__info-topline {
   display: flex;
   flex-direction: row;
+  /* width: 100%; */
 }
 
 @media screen and (max-width: 560px) {
@@ -102,7 +107,8 @@
   }
 
   .profile__button-add {
-    width: 282px;
+    max-width: 282px;
+    width: 100%;
     height: 50px;
     background-image: url(../images/Add\ Button\ 2.svg);
     margin: 0;

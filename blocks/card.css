@@ -7,12 +7,14 @@
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  width: 282px;
+  max-width: 282px;
+  /* max-height: 100%; */
   justify-self: center;
 }
 
 .card__image {
-  width: 282px;
+  max-width: 282px;
+  width: 100%;
   height: 282px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -33,6 +35,7 @@
   line-height: normal;
   text-wrap: nowrap;
   margin: 25px 0;
+  text-overflow: none;
 }
 
 .card__button {
@@ -44,6 +47,7 @@
   border: 0;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
 }
 
 .card__button:hover {
