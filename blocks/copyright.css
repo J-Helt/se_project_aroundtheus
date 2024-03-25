@@ -2,10 +2,17 @@
   width: 90%;
   max-width: 880px;
   color: #545454;
-  font-family: "Inter";
-  font-size: 14px;
+  font-family: "Inter", serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 0 auto 0;
+  margin: 17px auto 60px;
+}
+
+@media screen and (max-width: 320px) {
+  .copyright {
+    margin: 8px auto 36px;
+    font-size: 14px;
+  }
 }
