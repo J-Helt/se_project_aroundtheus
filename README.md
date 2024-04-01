@@ -21,3 +21,7 @@ Non-hovered State of buttons.
 Future Plans-
 
 - Creation of a video explaing further what technologies were used and adding a link to it to this file.
+
+Link to project page-
+
+- https://J-Helt.github.io/se_project_aroundtheus

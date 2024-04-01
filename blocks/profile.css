@@ -14,6 +14,7 @@
   align-items: flex-start;
   margin: 0 auto 0 30px;
   max-width: 417px;
+  min-width: 20%;
 }
 
 .profile__info-name {
@@ -26,6 +27,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 375px;
 }
 
 .profile__info-description {
@@ -43,11 +45,12 @@
   justify-self: flex-end;
   width: 150px;
   height: 50px;
-  margin: 0 1px 0 0;
+  margin: 0 10px 0;
   background-image: url(../images/Add\ Button.svg);
   border-width: 0;
   background-color: transparent;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .profile__button-edit {
@@ -60,6 +63,7 @@
   background-color: transparent;
   justify-self: flex-start;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .profile__button-edit:hover {
@@ -81,6 +85,7 @@
   flex-direction: row;
   white-space: nowrap;
   max-width: 100%;
+  min-width: 50%;
 }
 
 @media screen and (max-width: 560px) {
@@ -90,6 +95,7 @@
     margin: 0 auto 30px;
     align-items: center;
     width: 90%;
+    padding: 0;
   }
 
   .profile__info {
