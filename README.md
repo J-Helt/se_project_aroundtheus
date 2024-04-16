@@ -28,4 +28,4 @@ Link to project page-
 
 Link to Video of Project
 
-- https://drive.google.com/file/d/1NIls03Rz1nSpIdfUiAtyvqv6CyEj9XOY/view?usp=sharing
+- https://drive.google.com/file/d/1QGr9hmyMcyCs8WzpF-RSUtrf0MCSnwoQ/view?usp=sharing
