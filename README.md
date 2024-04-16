@@ -25,3 +25,7 @@ Future Plans-
 Link to project page-
 
 - https://J-Helt.github.io/se_project_aroundtheus
+
+Link to Video of Project
+
+- https://drive.google.com/file/d/1NIls03Rz1nSpIdfUiAtyvqv6CyEj9XOY/view?usp=sharing
