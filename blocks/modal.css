@@ -1,6 +1,5 @@
 .modal {
   position: fixed;
-  display: none;
   top: 0;
   right: 0;
   bottom: 0;
@@ -8,26 +7,28 @@
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0 19px;
-}
-
-.modal_opened {
-  display: flex;
+  display: none;
 }
 
 .modal_container {
+  display: none;
   position: relative;
   margin: auto;
   padding: 36px;
   border-radius: 10px;
   background-color: white;
-  max-width: 358px;
+  max-width: 430px;
   width: 100%;
-  align-items: center;
+}
+
+.modal_opened {
+  display: flex;
+  flex-direction: column;
 }
 
 .modal_close {
   position: absolute;
-  bottom: calc(100% + 5px);
+  top: -45px;
   left: calc(100% + 5px);
   height: 40px;
   width: 40px;
@@ -37,6 +38,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
+  display: block;
 }
 
 .modal_button {
@@ -52,6 +54,7 @@
   font-weight: 400;
   font-family: "Inter", serif;
   font-size: 18px;
+  align-self: center;
 }
 
 .modal_heading {
