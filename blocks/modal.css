@@ -27,6 +27,7 @@
 }
 
 .modal_close {
+  display: block;
   position: absolute;
   top: -45px;
   left: calc(100% + 5px);
@@ -42,6 +43,7 @@
 }
 
 .modal_button {
+  display: block;
   cursor: pointer;
   margin: 18px 0 0;
   width: 100%;
@@ -55,24 +57,35 @@
   font-family: "Inter", serif;
   font-size: 18px;
   align-self: center;
+  position: relative;
 }
 
 .modal_heading {
+  display: block;
+  position: relative;
   margin: 0 0 54px;
   font-family: "Inter", serif;
   font-weight: 900;
   font-size: 24px;
+  padding: 0;
+  background-color: #fff;
 }
 
 .modal_form {
+  display: block;
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0;
+  background-color: #fff;
 }
 
 .modal_name,
 .modal_description {
+  display: block;
+  position: relative;
   margin-bottom: 30px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
@@ -80,7 +93,13 @@
   font-size: 14px;
   font-weight: 400px;
   padding: 0 0 14px;
+  background-color: #fff;
 }
+
+/* .modal_opened {
+  display: flex;
+  flex-direction: column;
+} */
 
 @media screen and (max-width: 560px) {
   .modal_button {
