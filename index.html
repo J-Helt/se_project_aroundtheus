@@ -35,7 +35,7 @@
           <button class="profile__button-add" type="button"></button>
         </section>
         <section class="cards">
-          <article class="card">
+          <!-- <article class="card">
             <img
               class="card__image"
               src="./images/yosemite-valley.png"
@@ -100,7 +100,21 @@
               <h2 class="card__location">Lago di Braies</h2>
               <button class="card__button" type="button"></button>
             </div>
-          </article>
+          </article> -->
+
+          <template id="card">
+            <article class="card">
+              <img
+                class="card_image"
+                src="./images/lago-di-braies.png"
+                alt=""
+              />
+              <div class="card__information">
+                <h2 class="card__location"></h2>
+                <button class="card__button" type="button"></button>
+              </div>
+            </article>
+          </template>
         </section>
       </main>
       <footer>
@@ -112,8 +126,18 @@
         <button class="modal modal_close"></button>
         <p class="modal modal_heading">Edit Profile</p>
         <form class="modal modal_form">
-          <input class="modal modal_name" type="text" name="Name" />
-          <input class="modal modal_description" type="text" name="About me" />
+          <input
+            class="modal modal_name"
+            type="text"
+            name="Name"
+            placeholder="Name"
+          />
+          <input
+            class="modal modal_description"
+            type="text"
+            name="About me"
+            placeholder="Description"
+          />
           <button class="modal modal_button">Save</button>
         </form>
       </div>
