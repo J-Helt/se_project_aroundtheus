@@ -108,6 +108,13 @@
 
   .modal_close {
     bottom: calc(100% + 13.5px);
-    left: calc(100% - 40px);
+    left: calc(100% - 26px);
+    width: 26px;
+    height: 26px;
+    padding: 0;
+  }
+
+  .modal_container {
+    max-width: 282px;
   }
 }

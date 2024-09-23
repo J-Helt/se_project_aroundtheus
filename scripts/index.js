@@ -35,6 +35,8 @@ edit.addEventListener("click", function () {
   document.querySelector(".modal_close").classList.add("modal_opened");
   document.querySelector(".modal_heading").classList.add("modal_opened");
   document.querySelector(".modal_form").classList.add("modal_opened");
+  nameInput.value = profileName.textContent;
+  jobInput.value = profileJob.textContent;
 });
 
 function modalCloser(evt) {
@@ -55,6 +57,7 @@ function handleProfileFormSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = nameInput.value;
   profileJob.textContent = jobInput.value;
+  modalCloser(evt);
 }
 
 profileFormElement.addEventListener("submit", handleProfileFormSubmit);
