@@ -26,10 +26,10 @@ const initialCards = [
 ];
 
 const edit = document.querySelector(".profile__button-edit");
-const close = document.querySelector(".modal__close");
+const close = document.querySelector(".modal__button-close");
 const modalElement = document.querySelector(".modal");
-const nameInput = document.querySelector(".modal__input:first-of-type");
-const jobInput = document.querySelector(".modal__input:last-of-type");
+const nameInput = document.querySelector(".modal__form-input:first-of-type");
+const jobInput = document.querySelector(".modal__form-input:last-of-type");
 
 const profileFormElement = document.querySelector("#modal__form");
 
