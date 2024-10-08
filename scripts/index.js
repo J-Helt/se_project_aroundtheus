@@ -25,27 +25,33 @@ const initialCards = [
   },
 ];
 
-const edit = document.querySelector(".profile__button-edit");
-const close = document.querySelector(".modal__button-close");
+const edit = document.querySelector(".profile__info__topline__editButton");
+const close = document.querySelector(".modal__container__closeButton");
 const modalElement = document.querySelector(".modal");
-const nameInput = document.querySelector(".modal__form-input:first-of-type");
-const jobInput = document.querySelector(".modal__form-input:last-of-type");
+const nameInput = document.querySelector(
+  ".modal__container__form__input:first-of-type"
+);
+const jobInput = document.querySelector(
+  ".modal__container__form__input:last-of-type"
+);
 
 const profileFormElement = document.querySelector("#modal__form");
 
-const profileName = document.querySelector(".profile__info-name");
-const profileJob = document.querySelector(".profile__info-description");
+const profileName = document.querySelector(".profile__info__topline__name");
+const profileJob = document.querySelector(
+  ".profile__info__topline__description"
+);
 const cardSection = document.querySelector(".cards");
 const cardTemplate = document.querySelector("#card").content;
 
 edit.addEventListener("click", function () {
-  modalElement.classList.add("modal__opened");
+  modalElement.classList.add("modal_opened");
   nameInput.value = profileName.textContent;
   jobInput.value = profileJob.textContent;
 });
 
 function closeModal(evt) {
-  modalElement.classList.remove("modal__opened");
+  modalElement.classList.remove("modal_opened");
 }
 
 close.addEventListener("click", closeModal);

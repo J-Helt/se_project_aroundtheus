@@ -8,26 +8,30 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0 19px;
   display: none;
+  justify-content: center;
 }
 
 .modal__container {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: auto;
+  justify-self: center;
+  align-self: center;
+  margin: 19px;
   padding: 36px;
   border-radius: 10px;
   background-color: white;
   max-width: 430px;
-  width: 100%;
+
+  width: 90%;
 }
 
-.modal__opened {
+.modal_opened {
   display: flex;
   flex-direction: column;
 }
 
-.modal__button-close {
+.modal__container__closeButton {
   display: block;
   position: absolute;
   top: -45px;
@@ -41,13 +45,14 @@
   background-size: contain;
   cursor: pointer;
   display: block;
+  margin: 5px;
 }
 
-.modal__button-close:hover {
+.modal__container__closeButton:hover {
   opacity: 0.6;
 }
 
-.modal__button-save {
+.modal__container__saveButton {
   display: block;
   cursor: pointer;
   margin: 18px 0 0;
@@ -65,11 +70,11 @@
   position: relative;
 }
 
-.modal__button-save:hover {
+.modal__container__saveButton:hover {
   opacity: 0.8;
 }
 
-.modal__container-heading {
+.modal__container__heading {
   display: block;
   position: relative;
   margin: 0 0 54px;
@@ -81,7 +86,7 @@
   width: 100%;
 }
 
-.modal__container-form {
+.modal__container__form {
   display: block;
   position: relative;
   width: 100%;
@@ -92,7 +97,7 @@
   background-color: #fff;
 }
 
-.modal__form-input {
+.modal__container__form__input {
   display: block;
   position: relative;
   margin-bottom: 30px;
@@ -107,13 +112,23 @@
   height: 14px;
 }
 
-@media screen and (max-width: 560px) {
-  .modal__button-save {
+@media screen and (max-width: 620px) {
+  .modal__container__closeButton {
+    bottom: calc(100% + 13.5px);
+    left: calc(100% - 26px);
+    width: 26px;
+    height: 26px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .modal__container__saveButton {
     font-size: 14px;
     margin-top: 15px;
   }
 
-  .modal__button-close {
+  .modal__closeButton {
     bottom: calc(100% + 13.5px);
     left: calc(100% - 26px);
     width: 26px;
@@ -126,7 +141,7 @@
     padding: 25px 22px 25px 22px;
   }
 
-  .modal__container-heading {
+  .modal__container__heading {
     max-height: 22px;
     max-width: 238px;
     margin-bottom: 75px;
