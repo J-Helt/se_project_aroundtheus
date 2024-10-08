@@ -25,22 +25,16 @@ const initialCards = [
   },
 ];
 
-const edit = document.querySelector(".profile__info__topline__editButton");
-const close = document.querySelector(".modal__container__closeButton");
+const edit = document.querySelector(".profile__editButton");
+const close = document.querySelector(".modal__closeButton");
 const modalElement = document.querySelector(".modal");
-const nameInput = document.querySelector(
-  ".modal__container__form__input:first-of-type"
-);
-const jobInput = document.querySelector(
-  ".modal__container__form__input:last-of-type"
-);
+const nameInput = document.querySelector(".modal__input:first-of-type");
+const jobInput = document.querySelector(".modal__input:last-of-type");
 
 const profileFormElement = document.querySelector("#modal__form");
 
-const profileName = document.querySelector(".profile__info__topline__name");
-const profileJob = document.querySelector(
-  ".profile__info__topline__description"
-);
+const profileName = document.querySelector(".profile__name");
+const profileJob = document.querySelector(".profile__description");
 const cardSection = document.querySelector(".cards");
 const cardTemplate = document.querySelector("#card").content;
 

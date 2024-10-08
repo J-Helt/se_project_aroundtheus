@@ -31,7 +31,7 @@
   flex-direction: column;
 }
 
-.modal__container__closeButton {
+.modal__closeButton {
   display: block;
   position: absolute;
   top: -45px;
@@ -48,11 +48,11 @@
   margin: 5px;
 }
 
-.modal__container__closeButton:hover {
+.modal__closeButton:hover {
   opacity: 0.6;
 }
 
-.modal__container__saveButton {
+.modal__saveButton {
   display: block;
   cursor: pointer;
   margin: 18px 0 0;
@@ -70,11 +70,11 @@
   position: relative;
 }
 
-.modal__container__saveButton:hover {
+.modal__saveButton:hover {
   opacity: 0.8;
 }
 
-.modal__container__heading {
+.modal__heading {
   display: block;
   position: relative;
   margin: 0 0 54px;
@@ -86,7 +86,7 @@
   width: 100%;
 }
 
-.modal__container__form {
+.modal__form {
   display: block;
   position: relative;
   width: 100%;
@@ -97,7 +97,7 @@
   background-color: #fff;
 }
 
-.modal__container__form__input {
+.modal__input {
   display: block;
   position: relative;
   margin-bottom: 30px;
@@ -113,7 +113,7 @@
 }
 
 @media screen and (max-width: 620px) {
-  .modal__container__closeButton {
+  .modal__closeButton {
     bottom: calc(100% + 13.5px);
     left: calc(100% - 26px);
     width: 26px;
@@ -123,7 +123,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  .modal__container__saveButton {
+  .modal__saveButton {
     font-size: 14px;
     margin-top: 15px;
   }
@@ -141,7 +141,7 @@
     padding: 25px 22px 25px 22px;
   }
 
-  .modal__container__heading {
+  .modal__heading {
     max-height: 22px;
     max-width: 238px;
     margin-bottom: 75px;

@@ -25,14 +25,11 @@
             alt="Profile Picture"
           />
           <div class="profile__info">
-            <div class="profile__info__topline">
-              <h1 class="profile__info__topline__name">Jacques Cousteau</h1>
-              <button
-                class="profile__info__topline__editButton"
-                type="button"
-              ></button>
+            <div class="profile__topline">
+              <h1 class="profile__name">Jacques Cousteau</h1>
+              <button class="profile__editButton" type="button"></button>
             </div>
-            <p class="profile__info__topline__description">Explorer</p>
+            <p class="profile__description">Explorer</p>
           </div>
 
           <button class="profile__addButton" type="button"></button>
@@ -59,22 +56,22 @@
     </div>
     <div class="modal" id="modal">
       <div class="modal__container">
-        <button class="modal__container__closeButton"></button>
-        <p class="modal__container__heading">Edit Profile</p>
-        <form class="modal__container__form" id="modal__form">
+        <button class="modal__closeButton"></button>
+        <p class="modal__heading">Edit Profile</p>
+        <form class="modal__form" id="modal__form">
           <input
-            class="modal__container__form__input"
+            class="modal__input"
             type="text"
             name="Name"
             placeholder="Name"
           />
           <input
-            class="modal__container__form__input"
+            class="modal__input"
             type="text"
             name="About me"
             placeholder="Description"
           />
-          <button class="modal__container__saveButton">Save</button>
+          <button class="modal__saveButton">Save</button>
         </form>
       </div>
     </div>
