@@ -31,7 +31,7 @@
   flex-direction: column;
 }
 
-.modal__closeButton {
+.modal__close-button {
   display: block;
   position: absolute;
   top: -45px;
@@ -48,11 +48,11 @@
   margin: 5px;
 }
 
-.modal__closeButton:hover {
+.modal__close-button:hover {
   opacity: 0.6;
 }
 
-.modal__saveButton {
+.modal__save-button {
   display: block;
   cursor: pointer;
   margin: 18px 0 0;
@@ -70,7 +70,7 @@
   position: relative;
 }
 
-.modal__saveButton:hover {
+.modal__save-button:hover {
   opacity: 0.8;
 }
 
@@ -114,7 +114,7 @@
 }
 
 @media screen and (max-width: 620px) {
-  .modal__closeButton {
+  .modal__close-button {
     bottom: calc(100% + 13.5px);
     left: calc(100% - 26px);
     width: 26px;
@@ -124,12 +124,12 @@
 }
 
 @media screen and (max-width: 450px) {
-  .modal__saveButton {
+  .modal__save-button {
     font-size: 14px;
     margin-top: 15px;
   }
 
-  .modal__closeButton {
+  .modal__close-button {
     bottom: calc(100% + 13.5px);
     left: calc(100% - 26px);
     width: 26px;

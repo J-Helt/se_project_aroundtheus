@@ -25,8 +25,8 @@ const initialCards = [
   },
 ];
 
-const edit = document.querySelector(".profile__editButton");
-const close = document.querySelector(".modal__closeButton");
+const editButton = document.querySelector(".profile__editButton");
+const closeButton = document.querySelector(".modal__close-button");
 const modalElement = document.querySelector(".modal");
 const nameInput = document.querySelector(".modal__input:first-of-type");
 const jobInput = document.querySelector(".modal__input:last-of-type");
@@ -38,7 +38,7 @@ const profileJob = document.querySelector(".profile__description");
 const cardSection = document.querySelector(".cards");
 const cardTemplate = document.querySelector("#card").content;
 
-edit.addEventListener("click", function () {
+editButton.addEventListener("click", function () {
   modalElement.classList.add("modal_opened");
   nameInput.value = profileName.textContent;
   jobInput.value = profileJob.textContent;
@@ -48,7 +48,7 @@ function closeModal(evt) {
   modalElement.classList.remove("modal_opened");
 }
 
-close.addEventListener("click", closeModal);
+closeButton.addEventListener("click", closeModal);
 
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
