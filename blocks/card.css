@@ -1,5 +1,6 @@
 .card {
   background-color: white;
+  position: relative;
   color: black;
   border-radius: 10px;
   font-family: "Inter", serif;
@@ -40,7 +41,7 @@
   overflow: hidden;
 }
 
-.card__button {
+.card__like {
   background-image: url(../images/Heart\ SVG.svg);
   width: 21px;
   min-width: 21px;
@@ -52,6 +53,25 @@
   cursor: pointer;
 }
 
-.card__button:hover {
+.card__like:hover {
   opacity: 0.5;
+}
+
+.card__like-toggle {
+  background-image: url(../images/Filled\ Heart.svg);
+}
+
+.card__trash-button {
+  position: absolute;
+  background-color: transparent;
+  background-image: url(../images/Trash.svg);
+  width: 18px;
+  height: 19px;
+  border: 0;
+  top: 18px;
+  right: 15px;
+}
+
+.card__trash-button:hover {
+  opacity: 0.6;
 }
